@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    h1{
+        color:blue;
+    }
+    body{
+        background-color: aqua;
+    }
+</style>
+<body>
+    <fieldset align="center">
+        <legend>
+            <h1>Registration Form</h1>
+        </legend><br>
+    <div>Name:<input type="text" placeholder="enter your name:"></div><br>
+    <div>Father's Name:<input type="text" placeholder="enter your father's name"></div><br>
+    <div>Mother's Name:<input type="text" placeholder="enter your mother's name"></div><br>
+    <div>phone Number:<input type="number" placeholder="enter your phone number"></div><br>
+    <div>Email Id:<input type="text" placeholder="enter your Email:"></div><br>
+    <div>Gender:
+        <label for="101">Male:<input type="radio" name="my Gender" id="101"></label>
+        <label for="102">Female:<input type="radio" name="my Gender" id="102"></label>
+        <label for="103"></label>Others:<input type="radio" name="my Gender" id="103"></label>
+        </label>
+    </div><br>
+    <div>DOB:<input type="date" name="dob" placeholder="enter your dob:"></div><br>
+    <div>Address:<input type="text" placeholder="enter your address:"></div><br>
+    <div>Blood Group:
+         <select name="dropdown">
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+         </select>
+    </div><br>
+    <div>Depertment:
+        <label for="108">CSE<input type="radio" name="my dept" id="108"></label>
+        <label for="109">EEA<input type="radio" name="my dept" id="109"></label>
+        <label for="106">BBA<input type="radio" name="my dept" id="106"></label>
+    </div><br>
+    <div>Course:
+        <label for="110">Python<input type="radio" name="my course" id="110"></label>
+        <label for="111">C++<input type="radio" name="my course" id="111"></label>
+        <label for="112">Java:<input type="radio" name="my course" id="112"></label>
+    </div><br>
+    <div>photo:<input type="File"></div><br>
+    <div>
+        <input type="submit" value="submit"><br><br>
+        <input type="reset" value="reset">
+    </div>
+</fieldset>
+</body>
+</html>
