@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: aliceblue;
+    }
+    .welcome
+    {
+        background-color: white;
+        height: 250px;
+        width: 350px;
+        text-align: center;
+        margin: 200px 400px;
+        box-shadow:3px 3px 3px rgb(197, 197, 197);
+        border-radius: 10px;
+        border: 2px solid rgb(238, 236, 236)
+    }
+    h1{
+        font-size: 2em;
+       
+    }
+    button
+    {
+        background-color: blue;
+        margin-top: 10px;
+        padding: 10px 100px;
+        border-radius: 10px;
+        color: white;
+        box-shadow:2px 2px 5px blue;
+    }
+</style>
+<body>
+     <div class="welcome">
+        <h1>Welcome,User</h1>
+        <button type="submit" onclick="profile()">Profile</button><br/>
+        <button type="submit" onclick="exams()">Exams</button><br/>
+        <button type="submit" onclick="results()">Results</button><br/>
+     </div>
+</body>
+</html>
+<script>
+    function profile()
+    {
+        alert("Going to profile page");
+        window.location.href="Profile.html";
+    }
+    function exams()
+    {
+        alert("Going to exam page");
+        window.location.href="Exam_page.html";
+    }
+    function results()
+    {
+        alert("Going to result page");
+        window.location.href="Result_page.html";
+    }
+</script>
