@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter App</title>
+  </head>
+  <style>
+    body {
+      background-color: whitesmoke;
+    }
+    h1 {
+      margin-top: 100px;
+    }
+    .counter {
+      text-align: center;
+      margin-top: 100px;
+      margin-left: 400px;
+      background-color: white;
+      height: 300px;
+      width: 300px;
+      box-shadow: 0 0 10px pink;
+    }
+    #btn1 {
+      background-color: green;
+      color: white;
+      border-radius: 40%;
+    }
+    #btn2 {
+      background-color: red;
+      color: white;
+      border-radius: 40%;
+    }
+    #btn3 {
+      background-color: yellow;
+      color: black;
+      border-radius: 40%;
+    }
+  </style>
+  <body>
+    <div class="counter">
+      <br />
+      <h1>
+        <i>counter:<span id="counter">0</span></i>
+      </h1>
+      <div class="btns">
+        <button id="btn1" onclick="increment()">increment</button>
+        <button id="btn2" onclick="decrement()">decrement</button>
+        <button id="btn3" onclick="reset()">reset</button>
+      </div>
+    </div>
+    <script>
+      let counter = 0;
+      function update() {
+        document.getElementById("counter").innerHTML = counter;
+      }
+      function increment() {
+        counter++;
+        update();
+      }
+      function decrement() {
+        counter--;
+        update();
+      }
+      function reset() {
+        counter = 0;
+        update();
+      }
+    </script>
+  </body>
+</html>
