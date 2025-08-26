@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Colour</title>
+</head>
+<style>
+    .background-color{
+        text-align: center;
+        margin-top: 100px;
+    }
+    h1{
+        color: whitesmoke;
+    }
+    h1:hover{
+        color: black;
+    }
+    button{
+        background-color: aqua;
+        color: white;
+        border-radius: 20px;
+        box-shadow: 0 0 10px blue;
+    }
+    button:hover{
+        background-color: chartreuse;
+    } 
+</style>
+<body>
+    <div class="background-color">
+        <h1><u>Background Colour Changes</u></h1>
+        <div class="btn">
+            <button onclick="backgroundColor()">Background</button>
+        </div>
+    </div>
+    <script>
+        function backgroundColor(){
+            const colors=["red","pink","blue","orange","yellowgreen","black","lightgreen"];
+            const randomcolor=colors[Math.floor(Math.random()*colors.length)];
+            document.body.style.backgroundColor=randomcolor;
+        }
+    </script>
+</body>
+</html>
